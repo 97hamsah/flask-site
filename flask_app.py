@@ -9,6 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/startpage/')
 def startpage():
+    flash("Hello World!"")
     return render_template("startpage.html")
 
 if (__name__ == "__main__"):
