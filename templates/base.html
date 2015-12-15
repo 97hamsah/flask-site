@@ -11,9 +11,13 @@
 </header>
 <body>
 	<div id="content">
-		{% block content %}{% endblock %}
+		{% block content %}
+		<p>
+			{{message}}
+		</p>
+		{% endblock %}
 	</div>
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 	{% include "footer.html" %}
 </body>
