@@ -13,4 +13,4 @@ def startpage():
     return render_template("startpage.html")
 
 if (__name__ == "__main__"):
-    app.run
+    app.run()
