@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/startpage/')
 def startpage():
-    flash("Hello World!"")
+    flash("This sida uses kakor!")
     return render_template("startpage.html")
 
 if (__name__ == "__main__"):
